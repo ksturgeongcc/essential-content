@@ -1,49 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-a{
-    text-decoration: none;
-}
-img{
-    width: 100%;
-}
-/* header */
-header{
-    display: flex;
-    width: 100%;
-    height: 40vh;
-    background-image: url(../images/header.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-}
-header h1{
-    color: white;
-    font-size: 16px;
+/* Apply these styles universally to all elements */
+* {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-/* section */
-section{
-    display: flex;
-    flex-wrap: 1 1 1 15em;
+/* General styles for the body element */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Set the font stack for the page */
+    font-size: 14px; /* Set the base font size */
 }
 
+/* Styles for anchor tags (links) */
+a {
+    text-decoration: none; /* Remove underlines from links */
+}
 
-/* tablet */
-@media only screen and (min-width: 767px){
-    header h1{
-        font-size: 26px;
+/* Styles for images */
+img {
+    width: 100%; /* Make images responsive, filling their container's width */
+}
+
+/* Styles for the header */
+header {
+    display: flex; /* Use Flexbox for layout */
+    width: 100%; /* Full width of the container */
+    height: 40vh; /* Set the height to 40% of the viewport height */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    /* Optimised background shorthand */
+    background: url(../images/header.jpg) center/cover no-repeat;
+    /* no-repeat ensures the image doesn't repeat */
+    
+    /* Optional: if you need a fallback color */
+    background-color: #f3f3f3; /* Background color in case the image fails to load */
+}
+
+/* Styles for h1 elements within the header */
+header h1 {
+    color: white; /* Set the text color to white */
+    font-size: 2em; /* Set the font size to 2 times the base size */
+}
+
+/* Styles for paragraph elements */
+p {
+    font-size: 1em; /* Set the font size to the base size */
+}
+
+/* Styles for section elements */
+section {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow child elements to wrap to the next line */
+}
+
+/* Styles for div elements within sections */
+section div {
+    flex: 1 1 15em; /* Allow divs to grow and shrink, with a base width of 15em */
+    margin: 3em 1em; /* Set margin around divs */
+}
+
+/* Styles for paragraphs within section divs */
+section div p {
+    padding: .5em; /* Add padding inside paragraphs */
+}
+
+/* Styles for elements with the class 'parallax' */
+.parallax {
+    background: url(../images/fixed_bg.jpg) center/cover no-repeat fixed; /* Fixed background image with no repeat */
+    height: 20em; /* Set the height of the parallax section */
+}
+
+/* Styles for the footer element */
+footer {
+    text-align: center; /* Center-align text */
+    padding: 2em 0; /* Add vertical padding */
+}
+
+/* Media query for tablet devices (min-width: 767px) */
+@media only screen and (min-width: 767px) {
+    body {
+        font-size: 16px; /* Increase font size for larger screens */
     }
 }
-/* desktop */
-@media only screen and (min-width: 991px){
-    header h1{
-        font-size: 40px;
+
+/* Media query for desktop devices (min-width: 991px) */
+@media only screen and (min-width: 991px) {
+    header h1 {
+        font-size: 2.3em; /* Increase font size for header text on larger screens */
     }
 }
