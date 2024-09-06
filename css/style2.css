@@ -52,7 +52,16 @@ section div{
 section div p{
     padding: 4%;
 }
-
+/* parallax cotainer */
+.parallax{
+    background-image: url(../images/fixed_bg.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blue;
+    background-attachment: fixed;
+}
 
 /* tablet */
 @media only screen and (min-width: 767px){
