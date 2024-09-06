@@ -37,7 +37,20 @@ header h1{
 /* section */
 section{
     display: flex;
-    flex-wrap: 1 1 15em;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+
+}
+section div{
+    width: 340px;
+    margin: 4%;
+    line-height: 25px;
+
+}
+section div p{
+    padding: 4%;
 }
 
 
@@ -46,10 +59,16 @@ section{
     header h1{
         font-size: 26px;
     }
+    section div{
+        width: 330px;
+    }
 }
 /* desktop */
 @media only screen and (min-width: 991px){
     header h1{
         font-size: 40px;
+    }
+    section{
+        flex-direction: row;
     }
 }
