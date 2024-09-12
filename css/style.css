@@ -121,8 +121,8 @@ p {
 
 /* Styles for section elements */
 section {
-    /* display: flex; */ /* Use Flexbox for layout */
-    /* flex-wrap: wrap; */ /* Allow child elements to wrap to the next line */
+    display: flex;  /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow child elements to wrap to the next line */
 }
 
 /* Styles for div elements within sections */
