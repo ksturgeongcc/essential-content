@@ -157,6 +157,7 @@ footer {
     width: 100%;
     margin: 30px auto;
     padding-top: 20px;
+    flex-direction: column;
 }
 
 /* Form title */
