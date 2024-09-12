@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- background image, company title in the middle -->
+     <nav>
+        <div>
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul id="mobile_nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="mobile_click">&#8801;</div>
+    </nav>
+    <header>
+       <h1>Chantelle's Yoga</h1>
+    </header>
+    <section>
+        <div>
+            <img src="./images/img1.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+        <div>
+            <img src="./images/img2.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+        <div>
+            <img src="./images/img3.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+    </section>
+    <section class="parallax">
+
+    </section>
+    <section>
+        <div>
+            <img src="./images/img1.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+        <div>
+            <img src="./images/img2.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+        <div>
+            <img src="./images/img3.jpg" alt="lovely image of yoga">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita eligendi repellat perspiciatis possimus, sint reiciendis corporis reprehenderit ipsam? Distinctio magnam tempore, sed quod itaque voluptas soluta recusandae repellendus aut?</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Karen Sturgeon
+    </footer>
+    <script>
+        let mobileClick = document.getElementById('mobile_click');
+        let mobileNav = document.querySelector('#mobile_nav');
+
+        mobileClick.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

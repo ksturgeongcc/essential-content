@@ -9,6 +9,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Set the font stack for the page */
     font-size: 14px; /* Set the base font size */
+    position: relative;
+    z-index: 1;
 }
 
 /* Styles for anchor tags (links) */
@@ -20,7 +22,75 @@ a {
 img {
     width: 100%; /* Make images responsive, filling their container's width */
 }
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1005;
+    background: white;
+    border-bottom: 1px solid slategray;
+}
+ul{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: none;
+    background: white;
+}
+ul li{
+    height: 70px;
+    border-bottom: 1px solid slategray;
+    width: 100%;
+    list-style: none;
+}
 
+nav div a {
+    color: white;
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+    padding: 7px 0;
+}
+
+ul li a {
+    color: slategray;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div a img{
+    height: 100%;
+    padding: 5px 0;
+}
+/* active mobile menu */
+.active{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 60px;
+    /* top: 80px; */
+}
+#mobile_click{
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
 /* Styles for the header */
 header {
     display: flex; /* Use Flexbox for layout */
@@ -34,6 +104,7 @@ header {
     
     /* Optional: if you need a fallback color */
     background-color: #f3f3f3; /* Background color in case the image fails to load */
+    /* margin-top: 80px; */
 }
 
 /* Styles for h1 elements within the header */
@@ -41,6 +112,7 @@ header h1 {
     color: white; /* Set the text color to white */
     font-size: 2em; /* Set the font size to 2 times the base size */
 }
+
 
 /* Styles for paragraph elements */
 p {
@@ -81,6 +153,12 @@ footer {
     body {
         font-size: 16px; /* Increase font size for larger screens */
     }
+    nav{
+        /* height: 50px; */
+    }
+    .mobile_click{
+        display: none;
+    }
 }
 
 /* Media query for desktop devices (min-width: 991px) */
@@ -88,4 +166,24 @@ footer {
     header h1 {
         font-size: 2.3em; /* Increase font size for header text on larger screens */
     }
+    nav{
+        flex-direction: row;
+    }
+    nav div{
+        padding-left: 40px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+    ul li{
+        border-bottom: unset;
+        padding: 0 40px 0 0;
+    }
+    #mobile_click{
+        display: none;
+    }
 }
+
+
