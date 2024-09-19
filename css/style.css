@@ -203,6 +203,21 @@ footer {
     color: #333;
     font-weight: bold;
 }
+input:invalid{
+    border: red 1px solid;
+}
+.error{
+    color: red;
+    padding-top: 5px;
+}
+/* confirmation */
+.confirmation span{
+    color: green;
+    font-weight: bold;
+}
+.confirmation p{
+    margin-bottom: 10px;
+}
 
 /* Submit button styling */
 .submit-btn {
