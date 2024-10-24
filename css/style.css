@@ -145,7 +145,7 @@ section div p {
 /* Styles for the footer element */
 footer {
     text-align: center; /* Center-align text */
-    padding: 2em 0; /* Add vertical padding */
+    /* padding: 2em 0; */ /* Add vertical padding */
 }
 
 /************************************* Contact Page *******************************************/
@@ -246,17 +246,30 @@ input[type="tel"] {
 
 /* footer */
 footer{
+    flex-direction: column;
     display: flex;
-    background: whitesmoke;
+    background: white;
+    height: 450px;
+    border-top: 1px solid whitesmoke;
+    padding: 30px 0;
 }
-.contact, .map, .footer-nav{
+.contact-wrapper, .map, .links{
     width: 33.33%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 footer .contact{
-    font-size: 40px;
+    /* font-size: 39px; */
     display: flex;
     justify-content: space-evenly;
     align-items: end;
+    /* height: 40vh; */
+}
+.logo-footer{
+    width: 150px;
 }
 footer iframe{
     width: 100%;
@@ -265,12 +278,22 @@ footer ul{
     display: flex;
     background: unset;
 }
+.socials{
+    font-size: 34px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 .copyright{
     width: 100%;
     background: black;
     text-align: center;
     color: white;
     padding: 5px 0;
+    margin-top: 20px;
+}
+.contact-details span {
+    margin-left: 5px;
 }
 
 /**************************************** Media query for tablet devices (min-width: 767px) *********************************************/
@@ -313,3 +336,10 @@ footer ul{
 }
 
 
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.wrapper div{
+    background: orange;
+    flex: 1 1 30px;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: unset;
+}

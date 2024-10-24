@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dev_tools.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div-one">
+            div one
+            <button>Click Me</button>
+        </div>
+        <div>div two</div>
+        <div class="hidden">div three</div>
+    </div>
+    <script>
+        var show = document.querySelector('.hidden');
+        var btn = document.querySelector('button');
+        btn.addEventListener('mouseover', () => {  
+            show.classList.add('show') ;
+        })
+    </script>
+</body>
+</html>
