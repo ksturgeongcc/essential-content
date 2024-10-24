@@ -244,6 +244,34 @@ input[type="tel"] {
     color: #333;
 }
 
+/* footer */
+footer{
+    display: flex;
+    background: whitesmoke;
+}
+.contact, .map, .footer-nav{
+    width: 33.33%;
+}
+footer .contact{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+footer iframe{
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    background: unset;
+}
+.copyright{
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
 
 /**************************************** Media query for tablet devices (min-width: 767px) *********************************************/
 
